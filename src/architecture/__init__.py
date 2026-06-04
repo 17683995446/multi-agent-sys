@@ -579,3 +579,43 @@ class DependencyAnalyzer:
             },
             'topological_order': self.graph.topological_sort() if valid else []
         }
+
+from src.architecture.refactor_module import (
+    RefactorType,
+    RefactorStatus,
+    ModuleRefactorPlan,
+    ModuleRefactorer,
+    ModuleRefactorService
+)
+
+from src.architecture.refactor_class import (
+    CouplingType,
+    DecouplingStrategy,
+    ClassCouplingReport,
+    ClassDecoupler,
+    ClassRefactorService
+)
+
+from src.architecture.refactor_method import (
+    MethodComplexity,
+    SplitStrategy,
+    MethodAnalysis,
+    MethodSplitter,
+    MethodRefactorService
+)
+
+from src.architecture.var_normalize import (
+    NormalizationType,
+    VariableIssue,
+    NormalizationResult,
+    VariableNormalizer,
+    NormalizationService
+)
+
+from src.architecture.bug_locator import (
+    BugSeverity,
+    BugCategory,
+    BugReport,
+    BugLocator,
+    BugLocationService
+)
