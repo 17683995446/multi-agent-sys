@@ -1,0 +1,19 @@
+system:
+  name: "multi-agent-engineering-system"
+  version: "0.1.0"
+  environment: "development"
+
+python:
+  version: ">=3.11"
+  encoding: "utf-8"
+
+logging:
+  level: "INFO"
+  format: "json"
+  output: "stdout"
+
+paths:
+  src: "src"
+  config: "config"
+  tests: "tests"
+  docs: "docs"
